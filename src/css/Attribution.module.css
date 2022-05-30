@@ -13,4 +13,12 @@
 .attribution a {
   color: #202046;
 }
+
+@media (min-width: 481px) {
+  .attribution {
+    background-size: 50% 100%;
+    background-position: left center;
+    padding: 4rem;
+  }
+}
 /*# sourceMappingURL=Attribution.module.css.map */

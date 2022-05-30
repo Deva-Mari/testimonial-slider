@@ -32,8 +32,9 @@ function App() {
   };
 
   return (
-    <div>
+    <React.Fragment>
       <main className={styles.slider}>
+        <h1 className={styles["sr-only"]}>Testimonials</h1>
         <div className={styles["img-buttons"]}>
           <img
             className={styles["profile-img"]}
@@ -45,14 +46,19 @@ function App() {
             <img src={next} alt="next" onClick={nextClickHandler} />
           </div>
         </div>
-        <p className={styles.quote}>
-          <i>"</i> {data[person].quote} <i>"</i>
-        </p>
-        <p className={styles.name}>{data[person].name}</p>
-        <p className={styles.title}>{data[person].title}</p>
+        
+        <div className={styles.text}>
+          <p className={styles.quote}>
+            <i>"</i> {data[person].quote} <i>"</i>
+          </p>
+          <div className={styles.identity}>
+            <p className={styles.name}>{data[person].name}</p>
+            <p className={styles.title}>{data[person].title}</p>
+          </div>
+        </div>
       </main>
       <Attribution />
-    </div>
+    </React.Fragment>
   );
 }
 

@@ -15,3 +15,11 @@
         color: $darkBlue; 
     }
 }
+
+@media (min-width: 481px) {
+    .attribution{
+        background-size: 50% 100%;
+        background-position: left center;
+        padding: 4rem;
+    }
+}

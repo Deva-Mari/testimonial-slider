@@ -6,6 +6,15 @@
   background-position: 2rem 1rem;
 }
 
+.slider .sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
 .slider .img-buttons {
   position: relative;
 }
@@ -27,17 +36,18 @@
   background: white;
   border-radius: 50px;
   width: 5rem;
-  padding: .8rem;
+  padding: 0.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: pointer;
 }
 
 .slider .img-buttons .slider-buttons img {
-  width: .6rem;
+  width: 0.6rem;
 }
 
 .slider .quote {
@@ -51,16 +61,85 @@
   background-repeat: no-repeat;
   background-position: 50% 5%;
   background-size: 3.5rem;
+  color: #202046;
 }
 
 .slider .name {
   font-size: 1rem;
   font-weight: 700;
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
+  color: #202046;
 }
 
 .slider .title {
   font-size: 1rem;
   color: #babacf;
+}
+
+@media (min-width: 481px) {
+  .slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    text-align: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 6rem 11rem;
+    background-size: 52%;
+    background-position: 90% 40%;
+  }
+  .slider .text {
+    width: 55%;
+    min-width: 55%;
+    max-width: 55%;
+    z-index: 10;
+  }
+  .slider .text .quote {
+    padding: 0;
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 0;
+  }
+  .slider .text .identity {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .slider .text .identity .name {
+    margin-right: 10px;
+  }
+  .slider .text .identity .name, .slider .text .identity .title {
+    font-size: 1.2rem;
+  }
+  .slider .img-buttons {
+    margin: 0;
+    padding: 0;
+    width: 45%;
+    min-width: 45%;
+    max-width: 45%;
+  }
+  .slider .img-buttons .profile-img {
+    margin: 0;
+    padding: 0;
+    min-width: 40vw;
+    position: relative;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  .slider .img-buttons .slider-buttons {
+    top: 95%;
+    left: 10%;
+    padding: 1rem;
+    width: 7rem;
+  }
+  .slider .img-buttons .slider-buttons img {
+    width: .9rem;
+  }
 }
 /*# sourceMappingURL=Slider.module.css.map */
