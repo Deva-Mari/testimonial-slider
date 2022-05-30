@@ -81,10 +81,13 @@
         z-index: 10;
       .quote {
         padding: 0;
+        padding-top: 4rem;
         font-size: 1.9rem;
         line-height: 2.5rem;
         margin-bottom: 2rem;
         margin-top: 0;
+        background-size: 7rem;
+        background-position: 20% 0%;
       }
       .identity {
         display: flex;
@@ -112,7 +115,7 @@
         }
         .slider-buttons{
             top: 95%;
-            left: 10%;
+            left: 15%;
             padding: 1rem;
             width: 7rem;
             img{
