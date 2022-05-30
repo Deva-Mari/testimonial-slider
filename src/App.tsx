@@ -12,7 +12,7 @@ function App() {
     import(`./assets/${data[person].img}`).then((image) =>
       setImage(image.default)
     );
-  }, [data, person]);
+  }, [person]);
 
   const nextClickHandler = () => {
     if (person === 1) {
