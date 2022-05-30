@@ -33,6 +33,16 @@ function App() {
     }
   };
 
+  const keyPressHandler = (e: React.KeyboardEvent<HTMLDivElement>) =>{
+    if(e.code === "ArrowRight"){
+      nextClickHandler();
+    }
+    if(e.code === "ArrowLeft"){
+      prevClickHandler();
+    }
+    
+  }
+
   return (
     <React.Fragment>
       <main className={styles.slider}>
@@ -43,9 +53,9 @@ function App() {
             src={image}
             alt={data[person].name}
           />
-          <div className={styles["slider-buttons"]}>
+          <div className={styles["slider-buttons"]} onKeyDown={keyPressHandler} tabIndex={0}>
             <img src={prev} alt="previous" onClick={prevClickHandler} />
-            <img src={next} alt="next" onClick={nextClickHandler} />
+            <img src={next} alt="next" onClick={nextClickHandler}/>
           </div>
         </div>
 
