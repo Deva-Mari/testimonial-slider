@@ -1,6 +1,6 @@
 # Frontend Mentor - Coding bootcamp testimonials slider solution
 
-This is a solution to the [Coding bootcamp testimonials slider challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Coding bootcamp testimonials slider challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -13,7 +13,6 @@ This is a solution to the [Coding bootcamp testimonials slider challenge on Fron
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
-
 
 ## Overview
 
@@ -47,26 +46,29 @@ Users should be able to:
 ### What I learned
 
 - Practiced useState and useEffect
+
 ```js
 const [image, setImage] = useState("");
-  const [person, setPerson] = useState(0);
-  useEffect(() => {
-    import(`./assets/${data[person].img}`).then((image) =>
-      setImage(image.default)
-    );
-  }, [data, person]);
+const [person, setPerson] = useState(0);
+useEffect(() => {
+  import(`./assets/${data[person].img}`).then((image) =>
+    setImage(image.default)
+  );
+}, [person]);
 ```
+
 - improved Layouting skills
 - learned how to attach keydown Event to div
+
 ```js
-  const keyPressHandler = (e: React.KeyboardEvent<HTMLDivElement>) =>{
-    if(e.code === "ArrowRight"){
-      nextClickHandler();
-    }
-    if(e.code === "ArrowLeft"){
-      prevClickHandler();
-    }
+const keyPressHandler = (e: React.KeyboardEvent<HTMLDivElement>) => {
+  if (e.code === "ArrowRight") {
+    nextClickHandler();
   }
+  if (e.code === "ArrowLeft") {
+    prevClickHandler();
+  }
+};
 ```
 
 ### Continued development
