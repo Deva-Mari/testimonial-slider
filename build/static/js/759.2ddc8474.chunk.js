@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktestimonials_slider=self.webpackChunktestimonials_slider||[]).push([[759],{759:function(s,e,i){s.exports=i.p+"static/media/icon-prev.f72bba8e1f8b7df258c2.svg"}}]);

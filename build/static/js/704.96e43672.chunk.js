@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktestimonials_slider=self.webpackChunktestimonials_slider||[]).push([[704],{704:function(s,e,t){s.exports=t.p+"static/media/pattern-curve.05698a95740cb41f8c3c.svg"}}]);

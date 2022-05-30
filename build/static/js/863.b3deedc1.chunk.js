@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktestimonials_slider=self.webpackChunktestimonials_slider||[]).push([[863],{863:function(s,e,t){s.exports=t.p+"static/media/pattern-quotes.219bd182b41259a321a8.svg"}}]);

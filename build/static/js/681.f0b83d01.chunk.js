@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktestimonials_slider=self.webpackChunktestimonials_slider||[]).push([[681],{681:function(s,e,i){s.exports=i.p+"static/media/image-tanya.f54c06576a4cdc261099.jpg"}}]);

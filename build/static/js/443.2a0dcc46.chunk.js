@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktestimonials_slider=self.webpackChunktestimonials_slider||[]).push([[443],{443:function(s,e,i){s.exports=i.p+"static/media/image-john.5253a557aa7d00d8466f.jpg"}}]);
