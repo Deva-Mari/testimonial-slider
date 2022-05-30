@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import data from "./data/data.json";
 import styles from "./css/Slider.module.css";
 import prev from "./assets/icon-prev.svg";
@@ -8,9 +8,11 @@ import Attribution from "./components/Attribution";
 function App() {
   const [image, setImage] = useState("");
   const [person, setPerson] = useState(0);
-  import(`./assets/${data[person].img}`).then((image) =>
-    setImage(image.default)
-  );
+  useEffect(() => {
+    import(`./assets/${data[person].img}`).then((image) =>
+      setImage(image.default)
+    );
+  }, [data, person]);
 
   const nextClickHandler = () => {
     if (person === 1) {
@@ -46,7 +48,7 @@ function App() {
             <img src={next} alt="next" onClick={nextClickHandler} />
           </div>
         </div>
-        
+
         <div className={styles.text}>
           <p className={styles.quote}>
             <i>"</i> {data[person].quote} <i>"</i>
