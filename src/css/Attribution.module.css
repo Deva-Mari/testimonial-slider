@@ -1,0 +1,16 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #babacf;
+  margin-top: 1rem;
+  background-image: url(../assets/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center bottom;
+  padding: 3rem;
+}
+
+.attribution a {
+  color: #202046;
+}
+/*# sourceMappingURL=Attribution.module.css.map */

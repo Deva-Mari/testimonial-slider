@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,YAAY,CAAC;EACT,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,KAAK,ECJK,OAAkB;EDK5B,UAAU,EAAE,IAAI;EAEhB,gBAAgB,EAAE,gCAAgC;EAClD,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,SAAS;EAC1B,mBAAmB,EAAE,aAAa;EAClC,OAAO,EAAE,IAAI;CAIhB;;AAdD,AAWI,YAXQ,CAWR,CAAC,CAAA;EACG,KAAK,ECdF,OAAkB;CDexB",
+    "sources": [
+        "Attribution.module.scss",
+        "variables.scss"
+    ],
+    "names": [],
+    "file": "Attribution.module.css"
+}
