@@ -40,7 +40,6 @@ function App() {
     if(e.code === "ArrowLeft"){
       prevClickHandler();
     }
-    
   }
 
   return (
