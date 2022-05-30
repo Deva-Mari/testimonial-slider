@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/Deva-Mari/testimonial-slider)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://musical-rugelach-67f52c.netlify.app/)
 
 ## My process
 
